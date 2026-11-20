@@ -1,1 +1,45 @@
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embed Demo — Merchant Portal</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #090b10;
+        color: #e4e4e7;
+        padding: 48px 24px;
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      code {
+        background: #18181b;
+        color: #34d399;
+        padding: 2px 6px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Merchant Portal (Non-React HTML Demo)</h1>
+    <p>
+      Run <code>npm run build:embed</code> first, then serve this folder locally
+      (e.g. <code>npx serve .</code>). Update <code>data-api</code> below to your Flask or
+      Colab Cloudflare Tunnel URL.
+    </p>
+    <p>Themes supported: <code>dev</code>, <code>slate</code>, <code>executive</code>, <code>light</code>.</p>
+
+    <script
+      src="embed.js"
+      data-api="https://rent-examined-polls-database.trycloudflare.com/"
+      data-title="ToanChet Smartboi"
+      data-theme="dev"
+      data-open="false"
+      data-name="Guest"
+      defer
+    ></script>
+  </body>
+</html>
